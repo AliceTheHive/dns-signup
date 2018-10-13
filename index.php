@@ -1,6 +1,11 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+</head>
+<body>
 <?php
 // Split hosts file by a newline into an array.
-$hosts = explode("\n", rtrim(file_get_contents('hosts')));
+$hosts = explode("\n", rtrim(file_get_contents('etc/hosts')));
 
 // Iterate through the array, line by line.
 foreach($hosts as $host) {
@@ -19,3 +24,5 @@ foreach($hosts as $host) {
 // Debug stuff.
 var_dump($hosts_arr);
 ?>
+</body>
+</html>
