@@ -5,6 +5,7 @@
 	transition: 0.3s;
 	color: #fff;
 }
+
 input[type=text] {
     width: 66.7%;
     padding: 12px 20px;
@@ -37,7 +38,7 @@ input[type=submit]:hover {
 	border: 2px solid #f00;
 }
 
-div {
+form, div {
     border: 2px solid #a11;
     background-color: #333;
     padding: 20px;

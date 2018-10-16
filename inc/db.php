@@ -1,4 +1,5 @@
 <?php
+require_once('functions.php');
 $mysqli = new mysqli('localhost', 'dns-signup', '8Jhgdi9LIFHj8fha', 'dns-signup');
 
 if ($mysqli->connect_error) {
