@@ -17,7 +17,7 @@
 	<form action="insert.php" method="post">
 		URL:
 		<br />
-		<input type="text" name="url" pattern="[a-z]{2,10}" required="required" id="ioe" /><span class="suffix">.ioe</span>
+		<input type="text" name="url" pattern="[a-z0-9]{2,10}" required="required" id="ioe" /><span class="suffix">.ioe</span>
 		<br />
 		IP:
 		<br />
