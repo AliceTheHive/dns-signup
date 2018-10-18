@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Oct 15, 2018 at 01:58 PM
+-- Generation Time: Oct 18, 2018 at 01:21 PM
 -- Server version: 10.1.35-MariaDB-1
 -- PHP Version: 7.2.9-1
 
@@ -38,7 +38,11 @@ CREATE TABLE `domain` (
 --
 
 INSERT INTO `domain` (`uid`, `url`, `ip`, `valid`) VALUES
-(9, 'bryan.ioe', '10.183.2.20', 0);
+(10, 'bryan.ioe', '10.183.2.20', 1),
+(11, 'zulu.ioe', '10.183.1.26', 1),
+(12, 'bobross.ioe', '10.183.2.11', 1),
+(14, 'io.ioe', '10.183.1.30', 1),
+(15, 'ns1.ioe', '10.183.3.1', 0);
 
 --
 -- Indexes for dumped tables
@@ -58,7 +62,7 @@ ALTER TABLE `domain`
 -- AUTO_INCREMENT for table `domain`
 --
 ALTER TABLE `domain`
-  MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
