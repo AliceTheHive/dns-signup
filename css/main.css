@@ -1,5 +1,5 @@
 * {
-	font-size: 16px;
+	font-size: 25px;
 	font-family: monospace;
 	background-color: #000;
 	transition: 0.3s;
@@ -10,7 +10,7 @@ hr {
 	border: 1px solid #a11;
 }
 
-input[type=text] {
+input[type=text], input[type=password] {
     width: 66.7%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -21,7 +21,7 @@ input[type=text] {
 	outline: none;
 }
 
-input[type=text]:focus {
+input[type=text]:focus, input[type=password]:focus {
     border: 2px solid #d11;
 	background-color: #111;
 }
@@ -62,10 +62,6 @@ form, div {
 
 #ioe {
 	border-right: 1px solid #a11;
-}
-
-#ioe:focus {
-	border-right: 1px solid #d11;
 }
 
 /* The container */
