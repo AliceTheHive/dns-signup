@@ -7,11 +7,11 @@
 	<form action="insert.php" method="post">
 		URL:
 		<br />
-		<input type="text" name="url" pattern="[a-z]{,10}" required="required" id="ioe" /><span class="suffix">.ioe</span>
+		<input type="text" name="url" pattern="[a-z]{2,10}" required="required" id="ioe" /><span class="suffix">.ioe</span>
 		<br />
 		IP:
 		<br />
-		<input type="text" name="ip" value="<?php echo $_SERVER['REMOTE_ADDR']; ?>" />
+		<input type="text" name="ip" pattern="((^|\.)((25[0-5])|(2[0-4]\d)|(1\d\d)|([1-9]?\d))){4}$" value="<?php echo $_SERVER['REMOTE_ADDR']; ?>" required/>
 		<br />
 		<input type="submit" />
 	</form>
